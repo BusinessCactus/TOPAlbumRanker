@@ -334,6 +334,11 @@ function generateCode() {
   codeTxt.id = "save-message";
   codeTxt.textContent = code;
   container.appendChild(codeTxt);
+
+  const menuButton = document.createElement("button");
+  menuButton.textContent = "Back";
+  menuButton.onclick = () => location.reload();
+  container.appendChild(menuButton);
 }
 
 function finishQuiz() {
