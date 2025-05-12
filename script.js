@@ -193,8 +193,10 @@ const groupMap = {
   69: "group6",  // At the Risk of Feeling Dumb
 
   70: "group1",  // Before You Start Your Day
-  71: "group4",  // Leave the City
-  72: "group6"   // Paladin Strait
+  71: "group4",  // Legend
+  72: "group6",  // Paladin Strait
+
+  73: "group4"   // Leave the City
 };
 
 const groupTitles = {
