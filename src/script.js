@@ -215,10 +215,16 @@ function start() {
 }
 
 function startFromSeed() {
-  document.getElementById("title-screen").style.display = "none";
-
   const seedValue = document.getElementById("seedInput").value;
   scores = seedValue.split(":").map(Number);
+  for (let i = 0; i < scores.length; i++) {
+    if (scores[i] > 10 || isNaN(scores[i])) {
+      alert("Invalid code");
+      return;
+    }
+  }
+  document.getElementById("title-screen").style.display = "none";
+
   currentQuestionIndex = scores.length;
   showQuestion();
 }
