@@ -1,40 +1,32 @@
-<!doctype html>
+<!-- index.html -->
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/webstorm-icon-logo.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WS playground</title>
-  <link rel="stylesheet" href="/style.css">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TOP Album Ranker</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-<header class="logo">
-  <a href="https://www.jetbrains.com/webstorm/">
-    <img src="/webstorm-logo.svg" alt="WebStorm logo" width="344"
-         height="90">
-  </a>
-</header>
-<main id="app">
-  <h1 class="title">
-    Thank you for trying it out. <br /> Your first project is up and running
-    now.
-  </h1>
-  <section class="counter">
-    <div class="counter-info">
-      <p class="counter-text">Counter is</p>
-      <p class="counter-value" id="counter-value"></p>
-    </div>
-    <div class="counter-interaction">
-      <button id="increaseByOne" type="button">+1</button>
-      <button id="increaseByTwo" type="button">+2</button>
-      <button id="decreaseByOne" type="button">-1</button>
-      <button id="decreaseByTwo" type="button">-2</button>
-    </div>
-  </section>
-</main>
-<footer class="technologies">
-  <img src="/technologies.svg" alt="List of supported technologies">
-</footer>
-<script type="module" src="/src/main.js"></script>
+<div id="title-screen" class="up-centered">
+  <h1>Twenty One Pilots<br>Album Ranker</h1>
+  <button id="start-button" onclick="start()">Start</button>
+  <br><br><br><br><br>
+  <div class="seed">
+    <label for="seedInput">Resume From Code:</label>
+    <input type="text" id="seedInput" name="seedInput"><br><br>
+    <button onclick="startFromSeed()">Submit</button>
+  </div>
+</div>
+
+<div id="quiz-container" class="up-centered"></div>
+<div id="intro-container" class="centered">
+  <p>Rank each track from 1 to 10.</p>
+  <p>At the end, all scores will be tallied to<br>determine your favorite TOP albums in order!</p>
+  <p>Ready?</p>
+  <button onclick="showQuestion()">Go</button>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
