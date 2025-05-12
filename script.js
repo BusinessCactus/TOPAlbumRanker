@@ -99,9 +99,12 @@ const questions = [
   "BEFORE YOU START YOUR DAY",   // Twenty One Pilots
   // (No Track 13 on Vessel)
   // (No Track 13 on Blurryface)
-  "LEAVE THE CITY",              // Trench
+  "LEGEND",                      // Trench
   // (No Track 13 on Scaled and Icy)
-  "PALADIN STRAIT"               // Clancy
+  "PALADIN STRAIT",               // Clancy
+
+  // Track 14
+  "LEAVE THE CITY"
 ];
 
 
@@ -216,7 +219,8 @@ function start() {
 
 function startFromSeed() {
   const seedValue = document.getElementById("seedInput").value;
-  scores = seedValue.split(":").map(Number);
+  const codeArr = seedValue.split("").map(Number);
+  scores = codeArr.map(num => num + 1);
   for (let i = 0; i < scores.length; i++) {
     if (scores[i] > 10 || isNaN(scores[i])) {
       alert("Invalid code");
@@ -320,11 +324,12 @@ function generateCode() {
   const container = document.getElementById("quiz-container");
   container.innerHTML = "<p id='save-message'>Save this code and enter it next time to resume</p>";
 
-  const code = scores.join(":");
+  const codeArr = scores.map(score => score - 1);
+  const code = codeArr.join("");
   console.log(code);
 
   const codeTxt = document.createElement("p");
-  codeTxt.id = "save-message";
+  codeTxt.id = "code-text";
   codeTxt.textContent = code;
   container.appendChild(codeTxt);
 
