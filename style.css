@@ -9,6 +9,10 @@
   src: url("./fonts/Martian Mono Semiexpanded Regular.ttf") format("truetype");
 }
 
+a {
+  color: darkcyan;
+}
+
 .up-centered {
   position: absolute;
   top: 50%;
@@ -23,6 +27,18 @@
   left: 50%;
   transform: translate(-50%, -100px); /* Center, then move up by 100px */
   text-align: center;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 1rem; /* optional padding from edge */
+  text-align: right;
+}
+
+.inline-text, .inline-text + a {
+  display: inline;
 }
 
 #intro-container {
