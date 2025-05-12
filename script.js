@@ -312,13 +312,6 @@ function saveAndNext() {
 }
 
 function goBack() {
-  // Save current selection before going back
-  const inputValue = document.getElementById("answerInput").value;
-  const intValue = parseInt(inputValue);
-  if (!isNaN(intValue)) {
-    scores[currentQuestionIndex] = intValue;
-  }
-
   currentQuestionIndex--;
   showQuestion();
 }
