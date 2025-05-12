@@ -1,0 +1,95 @@
+/* style.css */
+@font-face {
+  font-family: "Clancy";
+  src: url("./fonts/clancy-logo-font.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "TOPfont";
+  src: url("./fonts/Martian Mono Semiexpanded Regular.ttf") format("truetype");
+}
+
+.up-centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -150px); /* Center, then move up by 100px */
+  text-align: center;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100px); /* Center, then move up by 100px */
+  text-align: center;
+}
+
+#intro-container {
+  display: none;
+  transform: translate(-50%, -200px);
+  white-space: nowrap;
+}
+
+#intro-container p {
+  font-family: "TOPfont", sans-serif;
+  font-size: 2rem;
+}
+
+body {
+  background-image: url("images/TOPalbums.png");
+  background-size: 120rem, 120rem;         /* Scales image to cover full screen */
+  background-position: center center;    /* Center the image */
+  background-repeat: repeat;   /* No tiling */
+  color: #e0e0e0;
+  padding-bottom: 55rem;
+}
+
+#start-button {
+  font-family: "TOPfont", sans-serif;
+  margin: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+}
+
+.seed, .seed button {
+  font-family: "TOPfont", sans-serif;
+}
+
+#title-screen h1 {
+  font-size: 2.5rem;
+  font-family: "Clancy", sans-serif;
+  white-space: nowrap;
+}
+
+#intro-container button {
+  margin: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+}
+
+#quiz-container {
+  font-family: "TOPfont", sans-serif;
+  font-size: 3rem;
+}
+
+#quiz-container p, #quiz-container h3 {
+  white-space: nowrap;
+}
+
+#quiz-container select, #quiz-container button {
+  font-family: "TOPfont", sans-serif;
+  margin: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+}
+
+#quiz-container ul {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 2rem;
+}
+
+#save-message {
+  font-size: 2rem;
+}
