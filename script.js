@@ -82,7 +82,7 @@ const questions = [
   // Track 11s
   "A CAR, A TORCH, A DEATH",     // Twenty One Pilots
   "TREES",                       // Vessel
-  "GONER",                       // Blurryface
+  "MESSAGE MAN",                 // Blurryface
   "BANDITO",                     // Trench
   "REDECORATE",                  // Scaled and Icy
   "OLDIES STATION",              // Clancy
@@ -90,7 +90,7 @@ const questions = [
   // Track 12s
   "TAXI CAB",                    // Twenty One Pilots
   "TRUCE",                       // Vessel
-  // (No Track 12 on Blurryface)
+  "HOMETOWN",
   "PET CHEETAH",                 // Trench
   // (No Track 12 on Scaled and Icy)
   "AT THE RISK OF FEELING DUMB", // Clancy
@@ -98,12 +98,14 @@ const questions = [
   // Track 13s
   "BEFORE YOU START YOUR DAY",   // Twenty One Pilots
   // (No Track 13 on Vessel)
-  // (No Track 13 on Blurryface)
+  "NOT TODAY",
   "LEGEND",                      // Trench
   // (No Track 13 on Scaled and Icy)
   "PALADIN STRAIT",               // Clancy
 
-  // Track 14
+  // Track 14s
+  "ISLE OF FLIGHTLESS BIRDS",
+  "GONER",
   "LEAVE THE CITY"
 ];
 
@@ -182,21 +184,25 @@ const groupMap = {
 
   60: "group1",  // A Car, a Torch, a Death
   61: "group2",  // Trees
-  62: "group3",  // Goner
+  62: "group3",  // Message Man
   63: "group4",  // Bandito
   64: "group5",  // Redecorate
   65: "group6",  // Oldies Station
 
   66: "group1",  // Taxi Cab
   67: "group2",  // Truce
-  68: "group4",  // Pet Cheetah
-  69: "group6",  // At the Risk of Feeling Dumb
+  68: "group3",  // Hometown
+  69: "group4",  // Pet Cheetah
+  70: "group6",  // At the Risk of Feeling Dumb
 
-  70: "group1",  // Before You Start Your Day
-  71: "group4",  // Legend
-  72: "group6",  // Paladin Strait
+  71: "group1",  // Before You Start Your Day
+  72: "group3",  // Not Today
+  73: "group4",  // Legend
+  74: "group6",  // Paladin Strait
 
-  73: "group4"   // Leave the City
+  75: "group1",  // Isle of Flightless Birds
+  76: "group3",  // Goner
+  77: "group4"   // Leave the City
 };
 
 const groupTitles = {
